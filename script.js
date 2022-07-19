@@ -144,7 +144,7 @@ icons.forEach(function(icon){
     icon.addEventListener('click',function(){
 
             if(this.classList.contains('linkedin')){
-                window.location.href ="www.linkedin.com/in/ritik-thapliyal-n3w";
+                window.location.href ="https://linkedin.com/in/ritik-thapliyal-n3w";
             }
 
             else if(this.classList.contains('github')){
