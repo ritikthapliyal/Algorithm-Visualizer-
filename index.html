@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="section-nav">
+        <a class="nav-main" href="">Algorithm Visualizer</a>
+
+        <div class="nav-related">
+            <div class="nav-buttons">
+                <button value="reset" class="btn btn--1">
+                    <ion-icon name="refresh-outline"></ion-icon>
+                    Reset</button>
+                <button value="Visualize" class="btn btn--2">
+                    <ion-icon name="eye-outline"></ion-icon>
+                    Visualize</button>
+            </div>
+    
+            <div class="nav-algorithms">
+                
+                <a class="nav-ele" href="">    
+                    <span class="algo-span">
+                        Select Algorithm
+                    </span>    
+                    <ion-icon class="algo-icon" name="caret-down-outline"></ion-icon>
+
+                    <div class="dropdown hidden">
+                        <ul class="dropdown-menu type1">
+                            <li class="algorithm-name"><s>Dijkstra's shortest path</s></li>
+                            <li class="algorithm-name">Breadth first Search (BFS)</li>
+                            <li class="algorithm-name">Depth first Search (DFS)</li>
+                        </ul> 
+                    </div>
+                </a>
+                <a class="nav-ele" href="">    
+                    <span>
+                        <s>Other Algorithms</s> 
+                    </span>    
+                    <ion-icon class="algo-icon" name="caret-down-outline"></ion-icon>
+
+                    <div class="dropdown hidden">
+                        <ul class="dropdown-menu type2">
+                            <li class="algorithm-name"><s>Bubble Sort</s></li>
+                            <li class="algorithm-name"><s>Binary Search</s></li>
+                        </ul> 
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+    
+    <!-- <div class="container"> -->
+        <section class ="info">
+            <div class="info-box">
+                
+                <img class="icons ufo" src="images/ufo.png" alt="ufo-image" draggable="true">
+                <p class="para">
+                    Put the UFO in the grid.<br>
+                    So that it could pick up the Alien.
+                </p>
+
+            </div>
+
+            <div class="info-box">
+
+                <img class="icons alien" src="images/monster.png" alt="alien-image" draggable="true">
+                <p class="para">
+                    Put the Alien in the grid so that<br> fellow aliens in the UFO may take him back.
+                </p>
+            </div>
+
+            <div class="about-grid-colors">
+                <div class="about-grid">
+                    <div class="box box-outside-1"></div>
+                    <span>Selected to Visit</span>
+                </div>
+                <div class="about-grid">
+                    <div class="box box-outside-2"></div>
+                    <span>Visiting</span>
+                    <div class="box simple-box"></div>
+                    <span>Visited</span>
+                </div>
+            </div>
+
+            <div class="section-about-algorithm info-box">
+                    <img class="icons" src="images/resume.png" alt="">
+                    <div class="about-algorithm">
+                        <span class="about--">Select An</span>
+                        <span class="algorithm--">Algorithm</span>
+                        <span class="about--">from above</span>
+                    </div>
+            </div>
+
+            <div class="section-contact">
+                <ion-icon class="icons linkedin" name="logo-linkedin"></ion-icon>
+                <ion-icon class="icons github" name="logo-github"></ion-icon>
+            </div>
+
+        </section>
+            
+        <div class="Grid">
+        </div>
+    <!-- </div> -->
+
+    <div class="section-loading">
+        <div class="lbox"></div>
+        <div class="lbox"></div>
+        <div class="lbox"></div>
+        <div class="lbox"></div>
+        <div class="lbox"></div>
+        <div class="lbox"></div>
+        <div class="lbox"></div>
+        <div class="lbox"></div>
+        <div class="lbox"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
